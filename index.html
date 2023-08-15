@@ -18,9 +18,13 @@
         <h3 class="title">Shoping List</h3>
         <form class="form js-form">
           <input class="input_order js-input_order" type="text" name="user_order" placeholder="Title...">
-          <input class="input_count js-input_count" type="number" name="user_order" placeholder="count">
-          <button class="btn" type="submit">Add</button>
+          <input class="input_count js-input_count" type="number" name="user_order" placeholder="count" min="0" max="99">
+          <button class="btn-style btn" type="submit">Add</button>
+          <button class="btn-style js-btn_record" type="button">Record 🎙</button>
+          <button class="btn-style js-btn_reset" type="button">Reset 🔄</button>
         </form>
+
+        <output class="outgoing_text js-outging_text"></output>
 
         <ul class="list js-list"></ul>
       </div>
